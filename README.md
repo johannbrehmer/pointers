@@ -3,13 +3,13 @@
 Johann Brehmer 2020
 ### Project organization
 
-- Claudio Jolowicz has lots of good advice on how to set up a Python project at his [Guide to hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/).[^alex]
+- Claudio Jolowicz has lots of good advice on how to set up a Python project at his [Guide to hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/).<sup>1(#alex)</sup>
 - My typical repository setup is demonstrated in [example_repo](./example_repo/). It's not at the same level as the hypermodern Python guide, but I felt comfortable with that setup.
 
 ### Coding
 
 - PyCharm and VS Code are both great IDEs. 
-- As far as Python style goes, I try to follow PEP8 (of course) and the [black code style](https://black.readthedocs.io/) with a slightly increased line length.[^kyle]
+- As far as Python style goes, I try to follow PEP8 (of course) and the [black code style](https://black.readthedocs.io/) with a slightly increased line length.<sup>1(#kyle)</sup>
 - My most visited website of 2019 and 2020 is probably [this StackOverflow question](https://stackoverflow.com/questions/53004311/how-to-add-conda-environment-to-jupyter-lab) on how to add conda environments to Jupyter Lab.
 
 ### Machine learning
@@ -27,9 +27,8 @@ Johann Brehmer 2020
 
 - Colors, line styles etc should be chosen with accessability in mind. Use perceptually uniform color maps.
 - To pick colors, I like [coolors.co](https://coolors.co).
-- If possible, colors, line styles etc should be as consistent throughout the paper as possible.
-- Figures should have consistent font sizes, roughly matching the paper text size.
-- Figures should have consistent margins. Don't choose margins automatically through `plt.tight_layout()`, but set them consciously. I've been using some (rather ugly) helper functions to achieve that, you can find them in [plot_layout.py](./plot_layout.py).
+- If possible, colors, line styles etc should be as consistent throughout the paper as possible. Figures should have consistent font sizes, roughly matching the paper text size. Authors that use small figures with tiny tiny captions are terrible people and regularly eat kittens.
+- Figures should have consistent margins. Don't choose margins automatically through `plt.tight_layout()`, but set them consciously. I am partial to square panels inside square canvasses. I've been using some (rather ugly) helper functions to achieve that, you can find them in [plot_layout.py](./plot_layout.py).
 
 ### Writing
 
@@ -37,5 +36,6 @@ Johann Brehmer 2020
 - The best citation manager I found so far is [BibDesk](https://bibdesk.sourceforge.io/). Unfortunately, it's MacOS only. Mendeley frustrated me because of its poor BibTeX export (so many issues with special characters), JabRef with its performance issues on Mac.
 
 
-[^alex]: Thanks to Alex for pointing me to this.
-[^kyle]: Thanks to Kyle for pointing me to this.
+<a name="alex">1</a>: Footnote content goes here: Thanks to Alex for pointing me to this.
+
+<a name="kyle">2</a>: Thanks to Kyle for the pointer.
