@@ -1,6 +1,8 @@
-# Pointers: tools, techniques and tips that make me feel more productive
+# Pointers
 
-Johann Brehmer 2020
+*Johann Brehmer 2020 (mail@johannbrehmer.de)*
+
+This is a list of tools, techniques, and tips that made me feel more productive. In all of these areas I have much to learn, and I will be happy about every comment of the form "Don't do X, that's stupid; do Y instead".
 ### Project organization
 
 - Claudio Jolowicz has lots of good advice on how to set up a Python project at his [Guide to hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/).
