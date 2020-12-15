@@ -25,10 +25,9 @@ Johann Brehmer 2020
 
 (I have too strong opinions on this, but here you go...)
 
-- Colors, line styles etc should be chosen with accessability in mind. Use perceptually uniform color maps ([this matplotlib doc](https://matplotlib.org/3.3.3/tutorials/colors/colormaps.html) isn't bad as a starting point).
-- To pick colors, I like [coolors.co](https://coolors.co).
-- If possible, colors, line styles etc should be as consistent throughout the paper as possible. Figures should have consistent font sizes, roughly matching the paper text size. Authors that use small figures with tiny tiny captions are terrible people and regularly eat kittens.
-- Figures should have consistent margins. Don't choose margins automatically through `plt.tight_layout()`, but set them consciously. I am partial to square panels inside square canvasses. I've been using some (rather ugly) helper functions to achieve that, you can find them in [plot_layout.py](./plot_layout.py).
+- Colors, line styles etc should be chosen with semantics, accessability, and consistency in mind. Lots of good points on choosing discrete color palettes can be found in [Lisa Charlotte Rost's guide](https://blog.datawrapper.de/beautifulcolors/). Color maps should be perceptually uniform ones ([this matplotlib doc](https://matplotlib.org/3.3.3/tutorials/colors/colormaps.html) isn't bad as a starting point). To pick colors (and check for greyscale representations and accessibility issues), I like [coolors.co](https://coolors.co).
+- Figures should have consistent font sizes, roughly matching the paper text size. Authors that use small figures with tiny tiny captions are terrible people and eat baby kittens.
+- Figures should also have consistent margins. Don't choose margins automatically through `plt.tight_layout()`, but set them consciously. I am partial to square panels inside square canvasses. I've been using some (rather ugly) helper functions to achieve that, you can find them in [plot_layout.py](./plot_layout.py).
 
 ### Writing
 
