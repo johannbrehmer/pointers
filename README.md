@@ -6,12 +6,12 @@ This is a list of tools, techniques, and tips that made me feel more productive.
 
 ### Project organization
 
-- Claudio Jolowicz has lots of good advice on how to set up a Python project at his [Guide to hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/).
-- My typical repository setup is demonstrated in [example_repo](./example_repo/). It's not at the same level as the hypermodern Python guide, but I felt comfortable with that setup.
+- Claudio Jolowicz wrote a great guide on how to set up a Python project: [Guide to hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/).
+- My own repositories are far from these best practices. Nevertheless, they worked well for me for testing out ideas fast. I included an example of my repository structure in [example_repo](./example_repo/).
 
 ### Coding
 
-- PyCharm and VS Code are both great IDEs. 
+- PyCharm and VS Code are both good IDEs.
 - As far as Python style goes, I try to follow PEP8 (of course) and the [black code style](https://black.readthedocs.io/) with a slightly increased line length.
 - My most visited website of 2019 and 2020 is probably [this StackOverflow question](https://stackoverflow.com/questions/53004311/how-to-add-conda-environment-to-jupyter-lab) on how to add conda environments to Jupyter Lab.
 
