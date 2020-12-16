@@ -24,7 +24,7 @@ This is a list of tools, techniques, and tips that made me feel more productive.
 ### HPC
 
 - I'm not very knowledgable on this, but my workflow involved synching code between my laptop and the cluster through git and data with rsync.
-- I like to submit jobs arrays (`sbatch --array 0-99 run.sh`, see [example_repo/experiments/hpc/run.sh]).
+- I like to submit jobs arrays a la `sbatch --array 0-99 run.sh`, see [run.sh](example_repo/experiments/hpc/run.sh).
 
 ### Visualization
 
