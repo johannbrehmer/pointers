@@ -1,0 +1,21 @@
+name: example
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - cudatoolkit=10.1
+  - ipykernel
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pip
+  - python=3.8
+  - pytorch
+  - scikit-image
+  - scipy
+  - torchvision
+  - pip:
+    - black
+    - nflows
+    - sacred==0.8.1

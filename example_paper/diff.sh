@@ -1,0 +1,2 @@
+# git latexdiff --exclude-safecmd="vskip" --exclude-textcmd="section,subsection" --config="PICTUREENV=(?:picture|DIFnomarkup|wrapfigure)[\w\d*@]*" --main manifold_flows_neurips.tex --bbl --verbose -o diff_neurips.pdf 8deb4b4a190ea0e643474b9950575d9a9f38d4d1 --
+git latexdiff --exclude-safecmd="vskip" --exclude-textcmd="section,subsection" --config="PICTUREENV=(?:picture|DIFnomarkup|wrapfigure)[\w\d*@]*" --main supplementary.tex --bbl --verbose -o diff_supplementary.pdf 8deb4b4a190ea0e643474b9950575d9a9f38d4d1 --

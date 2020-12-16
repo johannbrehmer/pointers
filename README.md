@@ -39,4 +39,4 @@ This is a list of tools, techniques, and tips that made me feel more productive.
 
 ### Acknowledgements
 
-Thanks to Alexander Held and Kyle Cranmer for teaching me many of these things.
+Thanks to Alexander Held, Kyle Cranmer, and Siddharth Mishra-Sharma for teaching me many of these things.

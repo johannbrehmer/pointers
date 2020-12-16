@@ -1,0 +1,127 @@
+
+\PassOptionsToPackage{numbers, sort&compress}{natbib}
+
+\usepackage[final]{neurips_2020}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{color,xcolor}
+\definecolor{schemecolor0}{rgb}{0.050383, 0.029803, 0.527975}
+\definecolor{schemecolor1}{rgb}{0.494877, 0.01199, 0.657865}
+\definecolor{schemecolor2}{rgb}{0.798216, 0.280197, 0.469538}
+\definecolor{schemecolor3}{rgb}{0.973416, 0.585761, 0.25154}
+\definecolor{schemecolor4}{rgb}{0.940015, 0.975158, 0.131326}
+
+\usepackage{hyperref}
+\usepackage{amsmath, amsfonts, dsfont, mathtools, amssymb}
+\usepackage{enumitem} % for user-defined bullets
+\usepackage{xspace} % spaces in commands
+\usepackage{subcaption}
+\usepackage{microtype}
+\usepackage{algorithm, algpseudocode}
+\usepackage{url}
+\usepackage{xfrac}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{graphicx, graphbox}
+\usepackage[font=small]{caption}
+\usepackage{mathtools}  % For norms and KL div
+
+% Link colors
+% \hypersetup{
+%     colorlinks=true, urlcolor=schemecolor1, anchorcolor=schemecolor1, citecolor=schemecolor1, filecolor=schemecolor1, linkcolor=schemecolor1, menucolor=schemecolor1, linktocpage=true, linktoc=all
+% }
+
+% General typesetting
+\newcommand{\toolfont}[1]{\textsc{#1}}
+\newcommand{\newparagraph}{\par\nopagebreak\bigskip\nopagebreak\noindent}
+\newcommand{\comment}[1]{\marginpar{\sffamily\scriptsize\textcolor{schemecolor2}{#1}}}
+\newcommand{\warning}[1]{\marginpar{\sffamily\scriptsize\textbf{\textcolor{schemecolor2}{#1}}}}
+
+% General symbols 
+\newcommand{\im}{\mathrm{i}}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\eg}{{e.\,g.}~}
+\newcommand{\ie}{{i.\,e.}~}
+\newcommand{\equivalent}{\simeq}
+\newcommand{\yep}{\textcolor{schemecolor1}{$\checkmark$}\xspace}
+\newcommand{\nope}{\textcolor{schemecolor3}{$\times$}\xspace}
+\newcommand{\pnope}{\textcolor{schemecolor3}{$(\times)$}\xspace}
+
+% Spaces
+\newcommand{\qqquad}{\qquad \qquad}
+\newcommand{\qqqquad}{\qqquad \qqquad}
+\newcommand{\qqqqquad}{\qqqquad \qqqquad}
+
+% Distributions 
+\newcommand{\normal}[2]{\mathcal{N}\!\!\left(#1 \middle| #2 \right)}
+\newcommand{\uniform}[2]{\mathrm{uniform}\!\!\left(#1 \middle| #2 \right)}
+
+% Derivatives
+\newcommand{\pder}[2]{\frac {\partial #1} {\partial #2}}
+\newcommand{\tder}[2]{\frac {\diff #1} {\diff #2}}
+\newcommand{\ttder}[2]{\frac {\diff^2 #1} {\diff {#2}^2}}
+\newcommand{\fder}[2]{\frac {\delta #1} {\delta #2}}
+
+% Vectors and matrices
+\newcommand{\twovec}[2]{\begin{pmatrix*}[c] #1 \\ #2 \end{pmatrix*}}
+\newcommand{\threevec}[3]{\begin{pmatrix*}[c] #1 \\ #2 \\ #3\end{pmatrix*}}
+\newcommand{\fourvec}[4]{\begin{pmatrix*}[c] #1 \\ #2 \\ #3 \\ #4 \end{pmatrix*}}
+\newcommand{\sixvec}[6]{\begin{pmatrix*}[c] #1 \\ #2 \\ #3 \\ #4 \\ #5 \\ #6 \end{pmatrix*}}
+\newcommand{\fourvecr}[4]{\begin{pmatrix*}[r] #1 \\ #2 \\ #3 \\ #4 \end{pmatrix*}}
+
+\newcommand{\twovect}[2]{\begin{pmatrix*}[c] #1 & #2 \end{pmatrix*}}
+\newcommand{\threevect}[3]{\begin{pmatrix*}[c] #1 & #2 & #3\end{pmatrix*}}
+\newcommand{\fourvect}[4]{\begin{pmatrix*}[c] #1 & #2 & #3 & #4 \end{pmatrix*}}
+\newcommand{\sixvect}[6]{\begin{pmatrix*}[c] #1 & #2 & #3 & #4 & #5 & #6 \end{pmatrix*}}
+
+\newcommand{\twomat}[4]{\begin{pmatrix*}[c] #1 & #2\\ #3 & #4 \end{pmatrix*}}
+\newcommand{\threemat}[9]{\begin{pmatrix*}[c] #1 & #2 & #3\\ #4 & #5 & #6 \\ #7 & #8 & #9\end{pmatrix*}}
+\newcommand{\twomatr}[4]{\begin{pmatrix*}[r] #1 & #2\\ #3 & #4 \end{pmatrix*}}
+\newcommand{\threematr}[9]{\begin{pmatrix*}[r] #1 & #2 & #3\\ #4 & #5 & #6 \\ #7 & #8 & #9\end{pmatrix*}}
+
+% Longer \bar
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+% Symbols
+\newcommand{\gp}{\mathcal{GP}}
+\newcommand{\induc}{\mathrm{ind}}
+\newcommand{\obs}{\mathrm{obs}}
+
+% Math operators
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Pois}{Pois}
+\DeclareMathOperator{\expectation}{\mathbb{E}}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\var}{var}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\BR}{BR}
+\DeclareMathOperator{\hc}{h.\,c.}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator{\relu}{ReLU}
+\DeclareMathOperator{\logistic}{logistic}
+\DeclareMathOperator*{\MSE}{MSE}
+\DeclareMathOperator{\nn}{NN}
+\DeclareMathOperator{\proj}{Proj}
+\DeclareMathOperator{\perm}{Perm}
+\DeclareMathOperator{\elbo}{ELBO}
+\DeclareMathOperator{\kl}{KL}
+
+% Norms and KL div
+\DeclarePairedDelimiterX{\infdivx}[2]{(}{)}{%
+  #1\;\delimsize\|\;#2%
+}
+\newcommand{\dkl}{D_{KL}\infdivx}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+
+% Bibstyle
+\bibliographystyle{unsrtnat}
+
+% % Widow orphan penalties
+% \widowpenalty120
+% \clubpenalty120
