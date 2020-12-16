@@ -2,7 +2,7 @@
 
 *Johann Brehmer (mail@johannbrehmer.de), 2020*
 
-This is a list of tools, techniques, and tips that made me feel more productive. In all of these areas I have much to learn, and I will be happy about every comment of the form "Don't do X, that's stupid; do Y instead".
+This is a list of tools, techniques, and tips that made me feel more productive. In all of these areas I have much to learn, if you think "X is stupid, you should do Y instead", please let me know.
 
 ### Project organization
 
@@ -12,7 +12,7 @@ This is a list of tools, techniques, and tips that made me feel more productive.
 ### Coding
 
 - PyCharm and VS Code are both good IDEs.
-- As far as Python style goes, I try to follow PEP8 (of course) and the [black code style](https://black.readthedocs.io/) with a slightly increased line length.
+- As far as Python style goes, I try to follow PEP8 (of course) and the [black code style](https://black.readthedocs.io/), though I like to increase the line length to 120 characters.
 - My most visited website of 2019 and 2020 is probably [this StackOverflow question](https://stackoverflow.com/questions/53004311/how-to-add-conda-environment-to-jupyter-lab) on how to add conda environments to Jupyter Lab.
 
 ### Machine learning
@@ -39,7 +39,6 @@ This is a list of tools, techniques, and tips that made me feel more productive.
 
 - VS Code is great for LaTeX as well.
 - The best citation manager I found so far is [BibDesk](https://bibdesk.sourceforge.io/). Unfortunately, it's only available for MacOS. Mendeley frustrated me because of its poor BibTeX export (so many issues with special characters), JabRef with its performance issues on Mac.
-
 
 ### Acknowledgements
 
