@@ -18,7 +18,7 @@ This is a list of tools, techniques, and tips that made me feel more productive.
 ### Machine learning
 
 - Some advice on optimizing PyTorch code at [this tweet](https://twitter.com/karpathy/status/1299921324333170689).
-- For experiment management, I have lately been using [sacred](https://github.com/IDSIA/sacred). See [example_repo/experiments/experiment.py](./example_repo/experiments/experiment.py). Alternatives I want to try include [MLFlow](https://mlflow.org/), which seems to be more actively developed. 
+- For experiment management, I have lately been using [sacred](https://github.com/IDSIA/sacred). See [experiment.py](./example_repo/experiments/experiment.py). Alternatives I want to try include [MLFlow](https://mlflow.org/), which seems to be more actively developed. 
 - [Optuna](https://optuna.readthedocs.io/en/stable/) is my personal favorite hyperparameter scan library.
 
 ### HPC
