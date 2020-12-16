@@ -2,4 +2,5 @@
 
 black -l 120 ../experiments/*.py
 black -l 120 ../experiments/datasets/*.py
-black -l 120 ../crow/*.py
+black -l 120 ../experiments/evaluation/*.py
+black -l 120 ../example/*.py

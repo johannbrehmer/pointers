@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import matplotlib
+
 matplotlib.use("Agg")
 
 import sys
@@ -13,6 +14,7 @@ import torch
 
 from sacred import SETTINGS, Experiment
 from sacred.observers import FileStorageObserver
+
 SETTINGS["CAPTURE_MODE"] = "sys"  # Fixing a bug in sacred when used with multiprocessing
 
 sys.path.insert(0, "../")
@@ -38,8 +40,8 @@ def config():
 
     # Hyperparameters
     batchsize = 100
-    lr = 1.e-3
-    lr_decay = 1.e-2
+    lr = 1.0e-3
+    lr_decay = 1.0e-2
     validation_frequency = 1000
     callback_frequency = 1000
 
@@ -157,10 +159,26 @@ def callback(trainer, step, model_snapshot_filename):
 
 
 @ex.capture
-def train(model, dataset, dataset_dir, batchsize, steps, lr, lr_decay, callback_frequency, validation_frequency, validation_fraction, gpu, dtype, device):
+def train(
+    model,
+    dataset,
+    dataset_dir,
+    batchsize,
+    steps,
+    lr,
+    lr_decay,
+    callback_frequency,
+    validation_frequency,
+    validation_fraction,
+    gpu,
+    dtype,
+    device,
+):
     # Get dataset
     chw = get_dataset_resolution(dataset, dataset_dir)
-    train_set, val_set = get_dataset(dataset, directory=dataset_dir, partition="train_val", valid_fraction=validation_fraction)
+    train_set, val_set = get_dataset(
+        dataset, directory=dataset_dir, partition="train_val", valid_fraction=validation_fraction
+    )
 
     # This has to happen after getting the datasets (which for now live on the CPU memory):
     if gpu:
