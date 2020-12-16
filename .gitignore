@@ -122,6 +122,7 @@ data/
 runs/
 logs/
 figures/
+.idea/
 /.vs
 *.pickle
 *.jpg

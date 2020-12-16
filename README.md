@@ -30,7 +30,7 @@ This is a list of tools, techniques, and tips that made me feel more productive.
 
 (I have too strong opinions on this, but here you go...)
 
-- Colors, line styles etc should be chosen with semantics, accessability, and consistency in mind. Lots of good points on choosing discrete color palettes can be found in [Lisa Charlotte Rost's guide](https://blog.datawrapper.de/beautifulcolors/). Color maps should be perceptually uniform, [this matplotlib doc](https://matplotlib.org/3.3.3/tutorials/colors/colormaps.html) is a good starting point).
+- Colors, line styles etc should be chosen with semantics, accessability, and consistency in mind. Lots of good points on choosing discrete color palettes can be found in [Lisa Charlotte Rost's guide](https://blog.datawrapper.de/beautifulcolors/). Color maps should be perceptually uniform, [this matplotlib doc](https://matplotlib.org/3.3.3/tutorials/colors/colormaps.html) is a good starting point.
 - To pick colors (and check for greyscale representations and accessibility issues), I like [coolors.co](https://coolors.co). [Palettable](https://jiffyclub.github.io/palettable/) is fun.
 - Figures should have consistent font sizes, roughly matching the paper text size. Authors that use small figures with tiny tiny captions are terrible people and eat kittens.
 - Figures should also have consistent margins. Don't choose margins automatically through `plt.tight_layout()`, but set them consciously. I am partial to square panels inside square canvasses. I've been using some (rather ugly) helper functions to achieve that, you can find them in [setup_figures.py](./example_repo/experiments/evaluation/setup_figures.py), I'm sure there is a prettier way though.
